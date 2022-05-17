@@ -29,3 +29,20 @@
     --white:#FFFFFF;
 
 }
+
+.navbar .navbar-brand {
+    font-family: 'Niconne';
+    color: var(--Primary);
+    font-size: 44px;
+    line-height: 53px;
+    display: flex;
+}
+
+.navbar i {
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height */
+display: flex;
+}
