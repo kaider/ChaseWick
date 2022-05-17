@@ -14,3 +14,37 @@ body {
 .navbar{
     background-color: var(--Gray-800);
 }
+
+.navbar a {
+    color: var(--Primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+#mainNav a:hover {
+    color: var(--Gray-300);
+}
+
+.midNav a {
+    padding: 0 1.25rem;
+}
+
+#mainNav .dropdown-menu {
+    background-color: var(--Gray-800);
+    border: 1px solid var(--Gray-600);
+    border-radius: 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#mainNav .dropdown-item:active {
+    background-color: var(--Primary-100);
+}
+
+#mainNav .dropdown-item:hover {
+    background-color: var(--Gray-700);
+}
