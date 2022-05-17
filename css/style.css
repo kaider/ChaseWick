@@ -12,7 +12,7 @@ body {
 }
 
 .navbar{
-    background-color: var(--Primary-extra-light);
+    background-color: var(--Gray-800);
 }
 .nav-link{
     color: var(--Primary) !important;
