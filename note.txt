@@ -1,0 +1,18 @@
+footer:
+    add padding
+    bg color
+    icon class
+nav:
+    marign to menu items
+    add hover state
+    sticky-top
+Hero:
+    align-items: center;
+    justify-content: center;
+    cardSection
+        flex
+        strech
+    restructure the cards to move button..
+Projects:
+    primary btn color change
+
