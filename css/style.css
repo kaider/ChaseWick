@@ -45,7 +45,6 @@ nav i {
 #mainNav a:hover,
 footer a:hover {
     color: var(--Gray-300);
-    text-decoration: underline;
 }
 
 .midNav a {
@@ -84,7 +83,7 @@ footer a:hover {
 .navSearchBar {
     display: flex;
     flex: 0 0 auto;
-    width: 80%;
+    padding: 5px 0;
 }
 
 .input-group input {
@@ -100,27 +99,36 @@ footer a:hover {
 .navsearchBar input {
     border-radius: 20px;
 }
+
+#button-addon2 {
+    padding: 0 8px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 footer .input-group input {
     border-radius: 4px;
 }
 
 .navSearchBar i {
     color: var(--Gray-500);
-    position: absolute;
-    z-index: 10;
-    top: 8px;
-    left: 7px;
 }
 
 @media (min-width: 576px) {
     .navSearchBar {
-        width: 60%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .socialMedia {
+        display: none;
     }
 }
 
 @media (min-width: 992px) {
     .navSearchBar {
-        width: 35%;
+        width: 25%;
     }
 }
 
@@ -185,8 +193,9 @@ footer a {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     flex: 0 0 auto;
-    width: 80%;
+    width: 60%;
 }
 
 @media (max-width: 768px) {
