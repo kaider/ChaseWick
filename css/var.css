@@ -3,6 +3,8 @@
     --Primary: #FCEDD2;
     --Primary-100: #F3D29A;
     --Background: #2D2217;
+    --Background-dark: #140F0A;
+    --Background-light: #594736;
     --Primary-gradient: linear-gradient(180deg, #EFE4FC 0%, rgba(239, 228, 252, 0) 100%);
     --Primary-gradient-rev:linear-gradient(180deg, rgba(239, 228, 252, 0) 0%, #EFE4FC 100%);
     --Secondary-dark:#A200DB;
