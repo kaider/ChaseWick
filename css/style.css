@@ -45,6 +45,7 @@ nav i {
 #mainNav a:hover,
 footer a:hover {
     color: var(--Gray-300);
+    text-decoration: underline;
 }
 
 .midNav a {
