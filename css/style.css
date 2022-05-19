@@ -208,3 +208,12 @@ footer a {
         display: block;
     }
 }
+
+.homePage .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-bottom: 4rem;
+}
