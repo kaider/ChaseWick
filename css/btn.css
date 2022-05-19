@@ -4,3 +4,14 @@
 .btn-primary:hover{
     background-color: var(--Primary-light);
 }
+
+.productBody{
+    margin-top: 120px;
+    background-color: var(--Background);
+    color: var(--Primary);
+}
+
+.productImage{
+    width: 100%;
+    height: auto;
+}
