@@ -104,9 +104,14 @@ footer a:hover {
 }
 
 #button-addon2 {
-    padding: 0 8px;
+    padding: 0 16px 0 10px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: var(--Gray-700);
+}
+
+#button-addon2 i {
+    color: var(--Primary);
 }
 
 footer #button-addon2 {
@@ -228,13 +233,13 @@ footer a {
     }
 }
 
-.homePage .carousel-caption {
+.carousel-caption {
     background-color: rgba(0, 0, 0, 0.45) !important;
     width: 100%;
     right: 0px;
     left: 0px;
     bottom: 0px;
-    padding-bottom: 4rem;
+    padding: 1.5rem 0 3rem 0;
 }
 
 @media (min-width: 1025px) {
