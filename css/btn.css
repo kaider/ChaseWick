@@ -7,7 +7,7 @@
 
 .productBody{
     margin-top: 120px;
-    background-color: var(--Background);
+    background-color: var(--Background-light);
     color: var(--Primary);
 }
 
@@ -15,3 +15,35 @@
     width: 100%;
     height: auto;
 }
+
+.productCard{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.productFilterLarge{
+    width: 80%;
+    background-color: var(--Background);
+    padding: 40px;
+}
+
+.breadcrumb{
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.breadcrumb a{
+    color: var(--Primary);
+}
+
+.breadcrumb-item.active{
+    color: var(--Primary);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: var(--Primary);
+    content: var(--bs-breadcrumb-divider, ">");
+  }

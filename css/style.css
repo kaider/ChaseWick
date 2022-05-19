@@ -20,7 +20,7 @@ body {
 
 .navbar,
 footer {
-    background-color: var(--Gray-800);
+    background-color: var(--Background);
 }
 
 #mainNav .navbar-collapse {
