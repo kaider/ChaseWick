@@ -5,6 +5,10 @@
     background-color: var(--Primary-light);
 }
 
+.btn-checkout .price{
+    margin-right: 10px;
+}
+
 .productBody{
     margin-top: 120px;
     background-color: var(--Background-light);
