@@ -127,6 +127,10 @@ footer .input-group input {
     color: var(--Gray-500);
 }
 
+.homePage {
+    padding-top: 121px;
+}
+
 @media (min-width: 576px) {
     .navSearchBar {
         width: 50%;
