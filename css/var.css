@@ -78,3 +78,12 @@
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+@media (max-width: 786px) {
+    .promo p {
+        font-size: 1rem;
+    }
+    p span {
+        font-size: 1.25rem;
+    }
+}
