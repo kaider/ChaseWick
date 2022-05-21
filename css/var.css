@@ -34,6 +34,23 @@
     --white:#FFFFFF;
 }
 
+.homePage {
+    padding-top: 62px;
+}
+
+@media (min-width: 576px) {
+    .homePage {
+        padding-top: 104px;
+    }
+}
+
+@media (min-width: 992px) {
+    .homePage {
+        padding-top: 0;
+    }
+}
+
+
 @keyframes promoAnime {
     0% { bottom: 0%;}
     20% { bottom: 0%;}
@@ -46,10 +63,10 @@
 
 .promo {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     overflow: hidden;
-    background-color: black;
     color: var(--Primary);
+    background-color: black;
 }
 
 .promoMove {
@@ -64,7 +81,7 @@
 
 .promoSlide {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -78,6 +95,7 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     padding: 0 5px;
+    color: white;
 }
 
 .promo h4 {
@@ -108,33 +126,30 @@
 .byCatImage img{
     height: auto;
     width: 100%;
-    opacity: 0.65;
+    filter: saturate(50%) brightness(70%);
     transition-duration: 0.5s;
 }
 
-.details {
+.byCatDetail {
     z-index: 2;
     position: absolute;
     bottom: 0;
     width: 100%;
-    min-height: 25%;
 }
 
 .byCatContent {
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.45);
     margin: 0;
-    padding: 2rem 25px 2.5rem 25px;
+    padding: 1rem 1.75rem;
     opacity: 0;
-    width: 100%;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    height: 18vh;
+    transition-duration: 0.5s;
 }
 
 .byCatImage:hover img {
-    opacity: 1;
+    filter: saturate(100%) brightness(100%);
     transform: scale(1.1);
 }
 
