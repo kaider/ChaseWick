@@ -57,7 +57,27 @@
     padding-right: .5rem;
     color: var(--Primary);
     content: var(--bs-breadcrumb-divider, ">");
-  }
+}
+
+.productDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.quantityArea{
+    display: flex;
+    flex-direction: row;
+}
+.quantityArea p{
+    margin-right: 20px;
+}
+
+.addCart{
+    background-color: var(--Primary-100);
+    color: var(--Background-dark);
+    width: 100%;
+}
 
   @media (max-width: 768px) {
       .productBody{
