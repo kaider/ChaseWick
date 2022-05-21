@@ -126,6 +126,16 @@ footer .input-group input {
     padding-top: 121px;
 }
 
+.footerNav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    flex: 0 0 auto;
+    width: 60%;
+}
+
 @media (min-width: 576px) {
     .navSearchBar {
         width: 50%;
@@ -226,16 +236,6 @@ footer a {
     line-height: 29px;
     letter-spacing: 0.5px;
     align-items: center;
-}
-
-.footerNav {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    flex: 0 0 auto;
-    width: 60%;
 }
 
 .carousel-caption {
