@@ -59,10 +59,16 @@
     content: var(--bs-breadcrumb-divider, ">");
 }
 
+.thumbnails img{
+    margin-top: 12px;
+    width: 93px;
+}
+
 .productDetails{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
@@ -85,6 +91,11 @@
     align-self: flex-end;
 }
 
+.productSpecifics{
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
   @media (max-width: 768px) {
       .productBody{
         margin-top: 60px;
@@ -93,5 +104,8 @@
       .productCard img{
           max-width: 85%;
       }
+      .productSpecifics{
+        margin-top: 80px;
+    }
 
   }
