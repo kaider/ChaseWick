@@ -55,7 +55,7 @@
 .promoMove {
     position: relative;
     bottom: 0%;
-    animation: promoAnime linear 12s infinite;
+    animation: promoAnime linear 20s infinite;
 }
 
 .promoMove:hover {
@@ -99,14 +99,54 @@
     }
 }
 
-.image  img{
+.byCatImage {
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+    overflow: hidden;
+}
+.byCatImage img{
     height: auto;
     width: 100%;
+    opacity: 0.65;
+    transition-duration: 0.5s;
 }
 
 .details {
     z-index: 2;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 0;
+    width: 100%;
+    min-height: 25%;
 }
+
+.byCatContent {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0;
+    padding: 2rem 25px 2.5rem 25px;
+    opacity: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.byCatImage:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.byCatImage:hover .byCatContent {
+    opacity: 1;
+}
+
+/* .byCatImage img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+} */
+
+/* .byCatContent:hover {
+    opacity: 1;
+} */
