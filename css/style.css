@@ -51,10 +51,9 @@ footer a:hover {
 }
 
 #mainNav .dropdown-menu {
-    background-color: var(--Gray-800);
-    border: 1px solid var(--Gray-600);
-    border-radius: 0;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
 }
 
 #mainNav .dropdown-item:active {
@@ -136,6 +135,8 @@ footer .input-group input {
     width: 60%;
 }
 
+
+
 @media (min-width: 576px) {
     .navSearchBar {
         width: 50%;
@@ -176,6 +177,13 @@ footer .input-group input {
     .homePage {
         padding-top: 0px;
     }
+
+    #mainNav .dropdown-menu {
+        background-color: var(--Gray-800);
+        border: 1px solid var(--Gray-600);
+        border-radius: 0;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    }
 }
 
 @media (max-width: 768px) {
@@ -195,12 +203,6 @@ footer .input-group input {
 
     .navbar-toggler {
         padding: 0  !important;
-    }
-
-    #mainNav .dropdown-menu {
-        border: none;
-        box-shadow: none;  
-        padding: 0 0 0 4vw;
     }
 
     .midNav a,
