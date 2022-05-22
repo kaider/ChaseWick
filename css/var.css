@@ -107,14 +107,13 @@
     margin: 0;
 }
 
-.Categories {
+.Categories01 {
     display: flex;
 }
 
 .CatImage {
     position: relative;
     cursor: pointer;
-    background-color: black;
     overflow: hidden;
     flex: 0 0 auto;
     width: 33.33333333333%;
@@ -160,8 +159,47 @@
     color: var(--Background-dark);
 }
 
+.Categories02 {
+    padding: 6rem 0 8rem 0;
+    background-color: var(--Background);
+    color: var(--Primary);
+}
+
+.Categories02 .CatImage {
+    width: 100%;
+}
+
 .homePage .accordion-body {
     padding: 0;
+}
+
+.SlothMain {
+    height: 100%;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    flex: 0 0 auto;
+    /* margin: 0 0.5rem; */
+}
+
+.SlothMain img {
+    width: 100%;
+}
+
+.SlothDetail {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.SlothContent {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 3rem 0.75rem;
+    opacity: 1;
+    height: 18vh;
+    transition-duration: 0.5s;
 }
 
 .homePage .accordion-button {
@@ -200,7 +238,7 @@
 }
 
 @media (max-width: 576px) {
-    .Categories {
+    .Categories01 {
         display: none;
     }
     .CatImage {
