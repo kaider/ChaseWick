@@ -155,9 +155,9 @@
 
 #CatAccordion {
     display: none;
-    padding: 3rem 1.5rem;
-    background-color: var(--Background);
-    color: var(--Primary);
+    padding: 3rem 1.5rem 5rem 1.5rem;
+    background-color: var(--Primary);
+    color: var(--Background-dark);
 }
 
 .homePage .accordion-body {
@@ -166,17 +166,26 @@
 
 .homePage .accordion-button {
     background-color: var(--Primary);
-    color: var(--Background);
+    color: var(--Background-dark);
     background-image: none;
 }
 
 .homePage .accordion-button:not(.collapsed) {
-    background-color: var(--Background-light);
+    background-color: #E3D5BD;
+    color: var(--Background-dark);
 }
 
 .homePage .accordion-item {
-    border: 1px solid var(--Background);
-    background-color: transparent;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: var(--Gray-300);
+}
+
+.homePage .accordion-item:first-of-type .accordion-button.collapsed,
+.homePage .accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0px;
 }
 
 
