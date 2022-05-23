@@ -200,17 +200,29 @@
     transition-duration: 0.5s;
 }
 
+.juneSub {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.juneSub::-webkit-scrollbar {
+    display: none;
+}
+
 .juneSub .CatImage {
     width: 100%;
 }
+
 
 @media (max-width: 992px) {
     .CatContent p {
         display: none;
     }
 
-    .Categories01 .CatContent,
-    .Categories02 .CatContent {
+    .CatContent {
         opacity: 1;
         height: 10vh;
     }
@@ -229,6 +241,8 @@
     .Categories01 {
         max-height: auto;
         overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
    
     .CatImage {
@@ -265,6 +279,10 @@
         height: 60vh;
         border: none;
         /* box-shadow: none; */
+    }
+    .juneSub {
+        display: block;
+        justify-content: center;
     }
 }
 
