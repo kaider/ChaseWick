@@ -109,6 +109,7 @@
 
 .Categories01 {
     display: flex;
+    background-color: black;
 }
 
 .CatImage {
@@ -130,6 +131,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    align-items: flex-end;
 }
 
 .CatContent {
@@ -152,16 +154,8 @@
     opacity: 1;
 }
 
-#CatAccordion {
-    display: none;
-    padding: 3rem 1.5rem 5rem 1.5rem;
-    background-color: var(--Primary);
-    color: var(--Background-dark);
-}
-
 .Categories02 {
-    padding: 6rem 0 8rem 0;
-    background-color: var(--Background);
+    background-color: var(--Background-dark);
     color: var(--Primary);
     overflow: hidden;
 }
@@ -171,12 +165,8 @@
 }
 
 .Categories02 .CatContent {
-    padding: 1.5rem 0.5rem;
-    height: 23vh;
-}
-
-.homePage .accordion-body {
-    padding: 0;
+    padding: 1rem 0.5rem;
+    height: 18vh;
 }
 
 .SlothMain {
@@ -185,7 +175,8 @@
     cursor: default;
     overflow: hidden;
     flex: 0 0 auto;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.65);
+    border: 10px solid var(--Primary);
+    /* box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.45); */
 }
 
 .SlothMain img {
@@ -203,36 +194,28 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.65);
     text-align: center;
-    padding: 2.5rem 0.75rem;
+    padding: 1rem 0.75rem;
     opacity: 1;
     height: 20vh;
     transition-duration: 0.5s;
 }
 
-.homePage .accordion-button {
-    background-color: var(--Primary);
-    color: var(--Background-dark);
-    background-image: none;
+.juneSub .CatImage {
+    width: 100%;
 }
 
-.homePage .accordion-button:not(.collapsed) {
-    background-color: #E3D5BD;
-    color: var(--Background-dark);
-}
+@media (max-width: 992px) {
+    .CatContent p {
+        display: none;
+    }
 
-.homePage .accordion-item {
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: var(--Gray-300);
-}
+    .Categories01 .CatContent,
+    .Categories02 .CatContent {
+        opacity: 1;
+        height: 10vh;
+    }
 
-.homePage .accordion-item:first-of-type .accordion-button.collapsed,
-.homePage .accordion-item:last-of-type .accordion-button.collapsed {
-    border-radius: 0px;
 }
-
 
 @media (max-width: 786px) {
     .promo p {
@@ -242,13 +225,22 @@
     .promo h4 {
         font-size: 1.15rem;
     }
-    .Categories02 .CatContent p {
+
+    .Categories01 {
+        max-height: auto;
+        overflow-x: auto;
+    }
+   
+    .CatImage {
+        width: 100%;
+    }
+
+    .Categories01::-webkit-scrollbar {
         display: none;
     }
-    .Categories02 .CatContent {
-        height: 7vh;
-        padding: 1rem;
-        opacity: 1;
+
+    .Categories01 .CatImage {
+        width: 80vw;
     }
 
     .Categories02 img {
@@ -258,23 +250,9 @@
     .Categories02 .CatContent h4 {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 576px) {
-    .Categories01 {
-        display: none;
-    }
-    .CatImage {
-        width: 100%;
-    }
-    .CatImage img {
-        filter: none;
-    }
-    .CatContent {
-        opacity: 1;
-    }
-    #CatAccordion {
-        display: block;
+    .SlothContent {
+        padding: 1rem 0.75rem;
     }
 
     .Categories02 .CatImage {
@@ -285,5 +263,13 @@
         box-shadow: none;
         margin: 0 1rem;
         height: 60vh;
+        border: none;
+        /* box-shadow: none; */
+    }
+}
+
+@media (max-width: 576px) {
+    .CatImage img {
+        filter: none;
     }
 }
