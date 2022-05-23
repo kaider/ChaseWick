@@ -137,11 +137,11 @@
 .CatContent {
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.65);
     margin: 0;
     padding: 1rem 1.75rem;
     opacity: 0;
-    height: 18vh;
+    height: 9rem;
     transition-duration: 0.5s;
 }
 
@@ -166,7 +166,16 @@
 
 .Categories02 .CatContent {
     padding: 1rem 0.5rem;
-    height: 18vh;
+    height: 10rem;
+}
+
+.Categories02 a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--Primary);
+    padding: 2px 8px;
+    font-weight: bold;
+    font-size: 140%;
 }
 
 .SlothMain {
@@ -196,7 +205,7 @@
     text-align: center;
     padding: 1rem 0.75rem;
     opacity: 1;
-    height: 20vh;
+    height: 12rem;
     transition-duration: 0.5s;
 }
 
@@ -224,7 +233,7 @@
 
     .CatContent {
         opacity: 1;
-        height: 10vh;
+        height: 5rem;
     }
 
 }
@@ -254,7 +263,7 @@
     }
 
     .Categories01 .CatImage {
-        width: 80vw;
+        width: 65vw;
     }
 
     .Categories02 img {
@@ -276,7 +285,7 @@
     .SlothMain {
         box-shadow: none;
         margin: 0 1rem;
-        height: 60vh;
+        height: 35rem;
         border: none;
         /* box-shadow: none; */
     }
