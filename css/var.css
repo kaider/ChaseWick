@@ -34,28 +34,45 @@
     --white:#FFFFFF;
 }
 
+.homePage {
+    padding-top: 62px;
+}
+
+@media (min-width: 576px) {
+    .homePage {
+        padding-top: 104px;
+    }
+}
+
+@media (min-width: 992px) {
+    .homePage {
+        padding-top: 0;
+    }
+}
+
+
 @keyframes promoAnime {
     0% { bottom: 0%;}
-    20% { bottom: 0%;}
+    28% { bottom: 0%;}
     33% { bottom: 100%;}
-    53% { bottom: 100%;}
+    61% { bottom: 100%;}
     66% { bottom: 200%;}
-    86% { bottom: 200%;}
+    94% { bottom: 200%;}
     100% { bottom: 300%;}
 }
 
 .promo {
     width: 100%;
-    height: 80px;
+    height: 10vh;
     overflow: hidden;
-    background-color: black;
     color: var(--Primary);
+    background-color: black;
 }
 
 .promoMove {
     position: relative;
     bottom: 0%;
-    animation: promoAnime linear 12s infinite;
+    animation: promoAnime linear 15s infinite;
 }
 
 .promoMove:hover {
@@ -63,13 +80,13 @@
 }
 
 .promoSlide {
-    width: 100%;
-    height: 80px;
+    height: 10vh;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto";
+    cursor: pointer;
 }
 
 .promo p {
@@ -78,6 +95,7 @@
     font-weight: 400;
     letter-spacing: 0.5px;
     padding: 0 5px;
+    color: white;
 }
 
 .promo h4 {
@@ -89,6 +107,137 @@
     margin: 0;
 }
 
+.Categories01 {
+    display: flex;
+    background-color: black;
+}
+
+.CatImage {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 33.33333333333%;
+}
+.CatImage img{
+    height: auto;
+    width: 100%;
+    filter: saturate(50%) brightness(60%);
+    transition-duration: 0.5s;
+}
+
+.CatDetail {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.CatContent {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0;
+    padding: 1rem 1.75rem;
+    opacity: 0;
+    height: 9rem;
+    transition-duration: 0.5s;
+}
+
+.CatImage:hover img {
+    filter: saturate(100%) brightness(100%);
+    transform: scale(1.1);
+}
+
+.CatImage:hover .CatContent {
+    opacity: 1;
+}
+
+.Categories02 {
+    background-color: var(--Background-dark);
+    color: var(--Primary);
+    overflow: hidden;
+}
+
+.Categories02 .CatImage {
+    width: 100%;
+}
+
+.Categories02 .CatContent {
+    padding: 1rem 0.5rem;
+    height: 10rem;
+}
+
+.Categories02 a {
+    text-decoration: none;
+    color: black;
+    background-color: var(--Primary);
+    padding: 2px 8px;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.SlothMain {
+    height: 100%;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    flex: 0 0 auto;
+    border: 10px solid var(--Primary);
+    /* box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.45); */
+}
+
+.SlothMain img {
+    width: 100%;
+}
+
+.SlothDetail {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.SlothContent {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    padding: 1rem 0.75rem;
+    opacity: 1;
+    height: 12rem;
+    transition-duration: 0.5s;
+}
+
+.juneSub {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.juneSub::-webkit-scrollbar {
+    display: none;
+}
+
+.juneSub .CatImage {
+    width: 100%;
+}
+
+
+@media (max-width: 992px) {
+    .CatContent p {
+        display: none;
+    }
+
+    .CatContent {
+        opacity: 1;
+        height: 5rem;
+    }
+
+}
+
 @media (max-width: 786px) {
     .promo p {
         font-size: 0.9rem;
@@ -97,16 +246,57 @@
     .promo h4 {
         font-size: 1.15rem;
     }
+
+    .Categories01 {
+        max-height: auto;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+   
+    .CatImage {
+        width: 100%;
+    }
+
+    .Categories01::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Categories01 .CatImage {
+        width: 65vw;
+    }
+
+    .Categories02 img {
+        filter: none;
+    }
+
+    .Categories02 .CatContent h4 {
+        font-size: 1rem;
+    }
+
+    .SlothContent {
+        padding: 1rem 0.75rem;
+    }
+
+    .Categories02 .CatImage {
+        display: none;
+    }
+
+    .SlothMain {
+        box-shadow: none;
+        margin: 0 1rem;
+        height: 35rem;
+        border: none;
+        /* box-shadow: none; */
+    }
+    .juneSub {
+        display: block;
+        justify-content: center;
+    }
 }
 
-.image  img{
-    height: auto;
-    width: 100%;
-}
-
-.details {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+@media (max-width: 576px) {
+    .CatImage img {
+        filter: none;
+    }
 }

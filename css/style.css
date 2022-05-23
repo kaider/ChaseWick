@@ -121,10 +121,6 @@ footer .input-group input {
     color: var(--Gray-500);
 }
 
-.homePage {
-    padding-top: 121px;
-}
-
 .footerNav {
     display: flex;
     justify-content: space-between;
@@ -156,9 +152,7 @@ footer .input-group input {
     .navSearchBar {
         display: none;
     }
-    .homePage {
-        padding-top: 62px;
-    }
+
     .carousel-item img {
         width: 576px !important;
         height: auto;
@@ -172,10 +166,6 @@ footer .input-group input {
 
     .fixed-top {
         position: unset;
-    }
-
-    .homePage {
-        padding-top: 0px;
     }
 
     #mainNav .dropdown-menu {
@@ -228,6 +218,8 @@ footer .input-group input {
 
     .footerNav {
         display: block;
+        width: 80%;
+  
     }
 }
 
@@ -253,5 +245,11 @@ footer a {
 @media (min-width: 1025px) {
     .h-custom {
     height: 100vh !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #mainNav {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
     }
 }
