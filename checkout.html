@@ -114,159 +114,89 @@
 </nav>
 
       
-      <section class="h-custom" style="background-color: #594736;">
-        <div class="container py-5">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col">
-              <div class="card">
-                <div class="card-body p-4">
-      
-                  <div class="row">
-      
-                    <div class="col-lg-7">
-                      <h5 class="mb-3"><a href="product.html" class="text-body"><i
-                            class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a></h5>
-                      <hr>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-4">
-                        <div>
-                          <p class="mb-1">Shopping cart</p>
-                          <p class="mb-0">You have 1 items in your cart</p>
-                        </div>
-                        <div>
-                          <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!"
-                              class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
-                        </div>
-                      </div>
-
-                      <!-- items purchased -->
-      
-                      <div class="card mb-3">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                              <div>
-                                <img
-                                  src="./img/candle1.png"
-                                  class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                              </div>
-                              <div class="ms-3">
-                                <h5>Brown Candle</h5>
-                                <p class="small mb-0">Description</p>
-                              </div>
-                            </div>
-                            <div class="d-flex flex-row align-items-center">
-                              <div style="width: 50px;">
-                                <h5 class="fw-normal mb-0">1</h5>
-                              </div>
-                              <div style="width: 80px;">
-                                <h5 class="mb-0">$10</h5>
-                              </div>
-                              <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- item 2-->
-
-                      
-
-                      <!-- end item 2-->
-      </div>
-                      
-      <!-- end items purchased -->
-                      
-      
-                      
-                    <div class="col-lg-5">
-      
-                      <div class="card rounded-3">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h5 class="mb-0">Card details</h5>
-                            
-                          </div>
-      
-                          <p class="small mb-2">Card type</p>
-                          <a href="#!" type="submit"><i
-                              class="fab fa-cc-mastercard fa-2x me-2"></i></a>
-                          <a href="#!" type="submit"><i
-                              class="fab fa-cc-visa fa-2x me-2"></i></a>
-                          <a href="#!" type="submit"></a><i
-                              class="fab fa-cc-amex fa-2x me-2"></i></a>
-                          <a href="#!" type="submit"><i class="fab fa-cc-paypal fa-2x"></i></a>
-      
-                          <form class="mt-4">
-                            <div class="form-outline mb-4">
-                              <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
-                                placeholder="Cardholder's Name" />
-                              <label class="form-label" for="typeName">Cardholder's Name</label>
-                            </div>
-      
-                            <div class="form-outline mb-4">
-                              <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
-                                placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
-                              <label class="form-label" for="typeText">Card Number</label>
-                            </div>
-      
-                            <div class="row mb-4">
-                              <div class="col-md-6">
-                                <div class="form-outline">
-                                  <input type="text" id="typeExp" class="form-control form-control-lg"
-                                    placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
-                                  <label class="form-label" for="typeExp">Expiration</label>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="form-outline">
-                                  <input type="password" id="typeText" class="form-control form-control-lg"
-                                    placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
-                                  <label class="form-label" for="typeText">CVV</label>
-                                </div>
-                              </div>
-                            </div>
-      
-                          </form>
-      
-                          <hr class="my-4">
-      
-                          <div class="d-flex justify-content-between">
-                            <p class="mb-2">Subtotal</p>
-                            <p class="mb-2">$10.00</p>
-                          </div>
-      
-                          <div class="d-flex justify-content-between">
-                            <p class="mb-2">Shipping</p>
-                            <p class="mb-2">$6.95</p>
-                          </div>
-      
-                          <div class="d-flex justify-content-between mb-4">
-                            <p class="mb-2"><b>Total(Incl. taxes)</b></p>
-                            <p class="mb-2"><b>$18.75</b></p>
-                          </div>
-      
-                          <button type="button" class="btn btn-info btn-block btn-lg">
-                            <div class="d-flex justify-content-between">
-                            
-                              <span>Checkout <i class="fas fa-long-arrow-alt-right"></i></span>
-                            </div>
-                          </button>
-      
-                        </div>
-                      </div>
-      
-                    </div>
-      
-                  </div>
-      
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="New York">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
                 </div>
               </div>
             </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+  
           </div>
-        </div>
-      </section>
-
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+  
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <b>4</b>
+          </span>
+        </h4>
+        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      </div>
+    </div>
+  </div>
 
 
 
