@@ -22,6 +22,7 @@ body {
 .navbar,
 footer {
     background-color: var(--Background);
+    
 }
 
 #mainNav .navbar-collapse {
@@ -47,6 +48,9 @@ footer a:hover {
     color: var(--Gray-300);
 }
 
+footer {
+    margin-top: 60px;
+}
 .midNav a {
     padding: .2rem 1.25rem;
 }
@@ -243,11 +247,7 @@ footer a {
     padding: 1.5rem 0 3rem 0;
 }
 
-@media (min-width: 1025px) {
-    .h-custom {
-    height: 100vh !important;
-    }
-}
+
 
 @media (max-width: 992px) {
     #mainNav {
@@ -255,7 +255,3 @@ footer a {
     }
 }
 
-
-p.card {
-  padding-bottom: 10%;
-}

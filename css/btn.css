@@ -1,8 +1,9 @@
 .btn-primary{
-    background-color: var(--Primary);
+    background-color: var(--Primary-100);
+    color: var(--Background);
 }
 .btn-primary:hover{
-    background-color: var(--Primary-light);
+    background-color: var(--Gray-500);
 }
 
 .btn-checkout .price{
