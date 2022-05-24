@@ -12,6 +12,10 @@ body {
     background-color: var(--Background);
 }
 
+.cartBody {
+    background-color: var(--Background-light);
+}
+
 .navbar .navbar-brand {
     font-family: 'Niconne';
     color: var(--Primary);
