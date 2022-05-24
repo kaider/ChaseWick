@@ -143,3 +143,10 @@
   }
 
 }
+
+.btn-info {
+    color: #000;
+    background-color: white;
+    border-color: black;
+}
+
