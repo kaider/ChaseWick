@@ -225,6 +225,10 @@
     width: 100%;
 }
 
+.Cult {
+    background-color: var(--Background-dark);
+    color: #FF6451;
+}
 
 @media (max-width: 992px) {
     .CatContent p {
