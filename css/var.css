@@ -63,7 +63,7 @@
 
 .promo {
     width: 100%;
-    height: 8vh;
+    height: 5.5rem;
     overflow: hidden;
     color: var(--Primary);
     background-color: black;
@@ -80,7 +80,7 @@
 }
 
 .promoSlide {
-    height: 8vh;
+    height: 5.5rem;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -247,7 +247,7 @@
 }
 
 .Cult .CatImage:hover {
-    border: 3px solid rgba(255, 0, 0, 0.55);
+    border: 4px solid rgba(255, 0, 0, 0.75);
 }
 
 @media (max-width: 992px) {
