@@ -124,6 +124,10 @@
     .productSpecifics{
       margin-top: 80px;
   }
+  .productFilterLarge{
+      margin-bottom: 20px;
+      width: 70%
+  }
 
 }  
 
