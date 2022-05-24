@@ -13,7 +13,7 @@ body {
 
 .navbar .navbar-brand {
     font-family: 'Niconne';
-    color: var(--Background);
+    color: var(--Primary);
     font-size: 44px;
     line-height: 53px;
     display: flex;
