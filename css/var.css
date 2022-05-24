@@ -107,6 +107,17 @@
     margin: 0;
 }
 
+.promo a {
+    color: #418D3F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.CatDetail h3,
+.CatDetail p {
+    text-decoration: none !important;
+}
+
 .Categories01 {
     display: flex;
     background-color: black;
@@ -225,6 +236,14 @@
     width: 100%;
 }
 
+.Cult {
+    background-color: var(--Background-dark);
+    color: var(--Primary);
+}
+
+.Cult .CatContent {
+    color: red;
+}
 
 @media (max-width: 992px) {
     .CatContent p {
@@ -298,5 +317,13 @@
 @media (max-width: 576px) {
     .CatImage img {
         filter: none;
+    }
+
+    .Cult h5 {
+        font-size: 1rem;
+    }
+
+    .Cult .CatContent {
+        padding: 0.5rem 0;
     }
 }
