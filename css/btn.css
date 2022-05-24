@@ -14,6 +14,23 @@
     color: var(--Primary);
 }
 
+.btn-secondary{
+    color: var(--Primary);
+    background-color: var(--Background);
+    border-color: var(--Background-dark);
+}
+.btn-secondary:hover{
+    color: var(--Primary);
+    background-color: var(--Background);
+    border-color: var(--Background-dark);
+}
+
+.dropdown-menu.show{
+    padding: 20px;
+    color: var(--Primary);
+    background-color: var(--Background);
+}
+
 .productFilterSmall{
     padding-bottom: 10px;
 }
@@ -34,7 +51,7 @@
 }
 
 .productFilterLarge{
-    width: 80%;
+    width: 60%;
     background-color: var(--Background);
     padding: 40px;
 }
@@ -107,6 +124,10 @@
     .productSpecifics{
       margin-top: 80px;
   }
+  .productFilterLarge{
+      margin-bottom: 20px;
+      width: 70%
+  }
 
 }  
 
@@ -143,3 +164,10 @@
   }
 
 }
+
+.btn-info {
+    color: #000;
+    background-color: white;
+    border-color: black;
+}
+
