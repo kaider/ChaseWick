@@ -237,6 +237,7 @@
 }
 
 .Cult {
+    display: none;
     background-color: black;
     color: var(--Primary);
 }
