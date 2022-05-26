@@ -1,6 +1,7 @@
 .btn-primary{
     background-color: var(--Primary-100);
     color: var(--Background);
+    border-color: black;
 }
 .btn-primary:hover{
     background-color: var(--Gray-500);
