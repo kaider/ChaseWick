@@ -1,6 +1,7 @@
 .btn-primary{
     background-color: var(--Primary-100);
     color: var(--Background);
+    border-color: black;
 }
 .btn-primary:hover{
     background-color: var(--Gray-500);
@@ -8,6 +9,18 @@
 
 .btn-checkout .price{
     margin-right: 10px;
+}
+
+.btn-outline-secondary {
+    color: black;
+    background-color: var(--Primary-100);
+    border-color: var(--Gray-500);
+}
+
+.btn-outline-secondary:hover {
+    color: var(--Primary);
+    background-color: var(--Background);
+    border-color: #6c757d;
 }
 
 .productBody{
