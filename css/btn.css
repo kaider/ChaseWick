@@ -59,13 +59,11 @@
 }
 
 .productCard{
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 30px;
+    padding: 0 20px;
 }
 
 .productFilterLarge{
-    width: 60%;
     background-color: var(--Background);
     padding: 40px;
 }
@@ -140,7 +138,7 @@
   }
   .productFilterLarge{
       margin-bottom: 20px;
-      width: 70%
+      width: 50%;
   }
 
 }  
