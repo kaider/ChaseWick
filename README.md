@@ -1,4 +1,4 @@
-https://rhynerd.github.io/FinalProject/
+https://kaider.github.io/ChaseWick/
 
 Final-Project
 
@@ -9,7 +9,6 @@ UCF UX/UI Bootcamp 2022
 Leon Dinh<br>
 Ryan Burgett<br>
 Chris Booth<br>
-Emmanuel Kastrenakes<br>
 
 
 
